@@ -1,0 +1,60 @@
+﻿<Page x:Class="LearnSchool_Misbakhov.Pages.AddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LearnSchool_Misbakhov.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--Услуга должна содержать следующие данные: название, стоимость, длительность, описание, скидку, 
+основное изображение. -->
+        <TextBlock x:Name="NameTextBlock" Text="название" 
+                       Grid.Row="2" Grid.Column="2"/>
+        <TextBlock x:Name="CostTextBlock" Text="стоимость" 
+                       Grid.Row="3" Grid.Column="2"/>
+        <TextBlock x:Name="TimeTextBlock" Text="длительность" 
+                       Grid.Row="4" Grid.Column="2"/>
+        <TextBlock x:Name="DescriptionTextBlock" Text="описание" 
+                       Grid.Row="5" Grid.Column="2"/>
+        <TextBlock x:Name="SkidkaTextBlock" Text="скидка" 
+                   Grid.Row="6" Grid.Column="2"/>
+
+        <TextBox x:Name="NewNameTBox" 
+                     Grid.Row="2" Grid.Column="3"/>
+        <TextBox x:Name="NewCostTBox" 
+                     Grid.Row="3" Grid.Column="3"/>
+        <TextBox x:Name="NewTimeTBox" 
+                     Grid.Row="4" Grid.Column="3"/>
+        <TextBox x:Name="NewDescriptionTBox" 
+                     Grid.Row="5" Grid.Column="3"/>
+        <ComboBox x:Name="NewSkidkaCOmboBox" 
+                  Grid.Row="6" Grid.Column="3"/>
+
+        <Button Content="добавить" x:Name="AddArtButton" 
+                Height="40" Width="150" 
+                Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2"/>
+    </Grid>
+</Page>
